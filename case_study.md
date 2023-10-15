@@ -1,0 +1,25 @@
+case_study
+================
+Qianying Wu
+2023-10-15
+
+## Get the Data
+
+``` r
+nyc_library = nyc_airbnb |>
+  rename(borough = neighbourhood_group) |>
+  mutate(stars = review_scores_location / 2)
+```
+
+## brainstorming questions
+
+- Where are airbnbs expensive?
+  - Borough? Neighborhood?
+  - Do other factors (room type) affect price? What about rating?
+- How long are Airbnbs active?
+  - Are Airbnbs illegal and do they get shut down?
+  - Which units have the most availability?
+- How does review score impacted by location?
+- Where are airbnbs?
+  - Borough? Neighborhood?
+  - Lat and Long?
